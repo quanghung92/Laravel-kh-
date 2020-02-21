@@ -6,13 +6,14 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Http\Requests\ProductAddRequest;
 use App\Http\Requests\ProductEditRequest;
-
+use App\models\product;
 
 class ProductController extends Controller
 {
     //Trang product
     function GetProduct() {
-        return view('BackEnd.product.listproduct');
+        $data['product']=product::paginate(3);
+        return view('BackEnd.product.listproduct',$data);
     }
     //Trang Add product
     function GetProductAdd() {

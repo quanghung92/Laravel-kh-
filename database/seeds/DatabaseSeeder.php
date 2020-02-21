@@ -15,5 +15,10 @@ class DatabaseSeeder extends Seeder
         $this->call(category::class);
         $this->call(product::class);
         $this->call(user::class);
+        $this->call(attribute::class);
+        $this->call(value::class);
+        $this->call(value_product::class);
+        $this->call(variant::class);
+        $this->call(variant_value::class);
     }
 }

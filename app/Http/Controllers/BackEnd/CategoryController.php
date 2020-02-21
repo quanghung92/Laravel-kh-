@@ -26,7 +26,7 @@ class CategoryController extends Controller
         $Addcate->name= $r->name;
         $Addcate->parent=$r->parent;
         $Addcate->save();
-        return redirect('/admin/cateogory')->with('thongbao','Thêm danh mục thành công');
+        return redirect('/admin/category')->with('thongbao','Thêm danh mục thành công');
 
     }
 }

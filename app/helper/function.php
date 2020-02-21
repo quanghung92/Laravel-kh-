@@ -35,3 +35,14 @@ function ShowCateLeft($data,$parent,$shift){
         }
     }
 }
+
+// lây từng giá trị
+
+function attr_value($mang){
+    $result=array();
+    foreach ($mang as $value) {
+        $attr=$value->attribute->name;
+        $result[$attr][]=$value->value;
+    }
+    return $result;
+}
