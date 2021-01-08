@@ -31,7 +31,11 @@
                         <span>Giá</span>
                     </div>
                     <div class="one-eight text-center">
-                        <span>Số lượng1</span>
+
+
+
+                        <span>Số lượng22</span>
+
                     </div>
                     <div class="one-eight text-center">
                         <span>Tổng</span>
